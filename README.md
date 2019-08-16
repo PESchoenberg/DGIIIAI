@@ -1,6 +1,6 @@
 # DGIIIAI - Intelligent Delta Glider.
 
-
+[![DOI](https://zenodo.org/badge/202588435.svg)](https://zenodo.org/badge/latestdoi/202588435)
 
 
 ## Overview:
@@ -48,7 +48,54 @@ system or MSVS doesn't link to it.
 due to the fact that the code is multi-threaded.
 
 * Load one of the provided scenarios. The ship will soon start acting on its
-own.
+own. You will have to wait a little bit while the ship loads its knowledge base
+and starts interpreting every rule.
+
+
+## Notes:
+
+* Code for this DG corresponds to Orbiter 2010. I started this development while 
+Orbiter 2010 was still the latest and once version 2016 came, the new DG 
+incarnation had the code completely rewritten and it was not worth to adapt 
+everything again.
+
+* It is relatively lightweight. I normally compile and run it on a Win virtual 
+machine inside a Linux system.
+
+* Most work should be oriented now to either:
+
+** Adapt the code to Orbiter 2016.
+
+** Produce more sql code and load it to the expert system database.
+
+** Create documentation for this project.
+
+** Since documentation is still lacking, in order to gain insight about this 
+project, use any Sqlite3 compatible DB editor to take a look inside the 
+knowledge base (it is located inside folder /databases). You will see several 
+tables that contain facts (i.e. flight parameters) and rules. Those rules are 
+written in sql. Don’t change anything unless you really know what you are 
+doing. Rules are assembled in “programs” that are loaded and unloaded by the AI 
+engine as they are needed.
+
+** Perhaps you will be wondering why build a knowledge base in SQL. Well… I 
+actually started with Prolog and built some nice prototypes but Prolog can only 
+use flat files for storage and an expert system that makes intensive use of its 
+rules – such as a spacecraft or aircraft while it flies – requires something 
+that can handle concurrent access to the knowledge base more safely, hence a 
+relational database. I initially used MySQL and results were very good but 
+Sqlite3 is much faster and easier to install for the end user.
+
+** Notice that having an on-board relational database in an Orbiter spacecraft 
+means also that  modules such as MFDs can exchange information between each 
+other very easily just by accessing the said database. In fact SQLC, which is 
+an MFD that I made in order to actually control the AI engine and access the 
+knowledge base (KB) does exactly that: it works with a database of its own (for 
+configuration) and interacts with the KB of the ship. Since a relational 
+database system takes care of concurrent access to a data table, it is possible 
+to have many modules working on the same table at virtually the same time. In 
+this regard, MySQL or PostgreSQL offer better characteristics, but Sqlite3 has 
+its own advantages, being the main ones simplicity and speed.
 
 
 ## Credits and Sources:
