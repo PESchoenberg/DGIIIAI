@@ -51,6 +51,13 @@ due to the fact that the code is multi-threaded.
 own. You will have to wait a little bit while the ship loads its knowledge base
 and starts interpreting every rule.
 
+* The ship is a work in progress. Many rules have been developed and tested, and
+now form part of the knowledge base. However, they only cover a fraction of
+what a complete set of rules for autonomus flight should be. Currently the KB 
+rules cover all start up and atmospheric takeoff, ascent to cruise altitude in 
+atmospheric flight, maneuvering and partially, navigation based in great circle 
+routes.
+
 
 ## Notes:
 
@@ -66,7 +73,8 @@ machine inside a Linux system.
 
 * Adapt the code to Orbiter 2016.
 
-* Produce more sql code and load it to the expert system database.
+* Produce more sql code and load it to the expert system database. The ship 
+needs more rules, and these are written in sql.
 
 * Create documentation for this project.
 
@@ -96,6 +104,11 @@ database system takes care of concurrent access to a data table, it is possible
 to have many modules working on the same table at virtually the same time. In 
 this regard, MySQL or PostgreSQL offer better characteristics, but Sqlite3 has 
 its own advantages, being the main ones simplicity and speed.
+
+* As this is an ongoing project it is not yet apt for use by average OSFS users.
+ It has limited functionality. The idea behind posting it as public access
+project is to document its existence, serve as basis for derived projects and of 
+course, produce all the AI rules required to provide fully autonomous flight.
 
 
 ## Credits and Sources:
