@@ -108,7 +108,18 @@ its own advantages, being the main ones simplicity and speed.
 * As this is an ongoing project it is not yet apt for use by average OSFS users.
  It has limited functionality. The idea behind posting it as public access
 project is to document its existence, serve as basis for derived projects and of 
-course, produce all the AI rules required to provide fully autonomous flight.
+course, produce all the AI rules required to provide fully autonomous flight. 
+Consider this as a beta or pre-production system.
+
+
+## Related projects:
+
+* gexsys - https://github.com/PESchoenberg/gexsys - This is a Scheme-based 
+expert system developed directly from DGIIIAI. There are some differences 
+between both, being the main one that the system installed on DGIIIAI is 
+specific for this space ship, while gexsys is mre general-purpose, but broadly 
+speaking they work very similarly. Thus, you could use both for double feedback 
+and testing.
 
 
 ## Credits and Sources:
