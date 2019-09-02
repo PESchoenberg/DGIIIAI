@@ -11,10 +11,10 @@ III equipped with its own SQL expert-system-based AI.
 
 ## Dependencies:
 
-* Orbiter Space Flight Simulator (OSFS) ver 2010 or newer 
+* Orbiter Space Flight Simulator (OSFS) 2010 or later 
 - http://orbit.medphys.ucl.ac.uk/
 
-* MS Visual Studio ver 2010 or newer with OpenMP compatibility.
+* MS Visual Studio 2010 or later, with OpenMP compatibility.
 
 * Sqlite3 - https://www.sqlite.org/index.html 
 
@@ -124,7 +124,9 @@ and testing.
 
 ## Credits and Sources:
 
-* Dr. Martin Schweiger, for OSFS.
+* Schweiger, M. (2000). Orbiter 2016 Space Flight Simulator. [online]
+Orbit.medphys.ucl.ac.uk. Available at: http://orbit.medphys.ucl.ac.uk/
+[Accessed 26 Aug. 2019].
 
 * Credits for the original DGIII files are kept as in the original version.
 
