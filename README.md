@@ -12,13 +12,13 @@ III equipped with its own SQL expert-system-based AI.
 ## Dependencies:
 
 * Orbiter Space Flight Simulator (OSFS) 2010 or later 
-- http://orbit.medphys.ucl.ac.uk/
+( http://orbit.medphys.ucl.ac.uk/ )
 
 * MS Visual Studio 2010 or later, with OpenMP compatibility.
 
-* Sqlite3 - https://www.sqlite.org/index.html 
+* Sqlite3 ( https://www.sqlite.org/index.html )
 
-* SQLC - https://github.com/PESchoenberg/SQLC.git
+* SQLC ( https://github.com/PESchoenberg/SQLC.git )
 
 
 ## Installation:
