@@ -29,6 +29,8 @@ installation.
 * Carefully review the contents of the compressed file of this project
 in order to see what will be copied.
 
+* Read the manual included in the /doc/DGIIIAI folder.
+
 * Copy the contents of /orbiter folder into your Orbiter simulator main folder.
 
 
