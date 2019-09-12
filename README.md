@@ -33,6 +33,11 @@ in order to see what will be copied.
 
 * Copy the contents of /orbiter folder into your Orbiter simulator main folder.
 
+* Copy sqlite3.dll into your /modules folder. You should obtain this dll by 
+means of your Sqlite3 installation.
+
+* Install SQLC as a regular Orbiter addon after installing DGIIIAI.
+
 
 ## Uninstall:
 
