@@ -5511,7 +5511,7 @@ Setup and init exsys.
 void DeltaGlider::ExsysSetup()
 {
 	//VECTOR3 globalorientation={0};
-   VECTOR3 globalorientationvec = {0};
+        VECTOR3 globalorientationvec = {0};
 	VECTOR3 airspeedvec_global ={ 0};
 	VECTOR3 airspeedvec_local = {0};
 	VECTOR3 airspeedvec_reflocal = {0};
@@ -5628,7 +5628,7 @@ void DeltaGlider::ExsysSetup()
 
 
 /**
-Exsys reads sensor info.
+Exsys reads sensor info (OAPI data).
 */
 void DeltaGlider::ExsysReadSen()
 {
@@ -6553,7 +6553,7 @@ void DeltaGlider::ExsysManage()
 	{
 		case 1:	
 			//Connect to AI database.	
-		   //data = "SQL query function called";
+		        //data = "SQL query function called";
 		  	rc = sqlite3_open("C:\\sources\\orbiter1\\Databases\\DGIIIAI\\DGIIIAI.db", &db);
 			if(!rc)
 			{
